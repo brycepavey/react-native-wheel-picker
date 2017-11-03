@@ -95,6 +95,7 @@ var AwesomeProject = React.createClass({
         <Picker style={{width: 150, height: 180}}
           selectedValue={this.state.selectedItem}
           itemStyle={{color:"white", fontSize:26}}
+          selectedLineColor={"white"}
           onValueChange={(index) => this.onPikcerSelect(index)}>
             {this.state.itemList.map((value, i) => (
               <PickerItem label={value} value={i} key={"money"+value}/>
