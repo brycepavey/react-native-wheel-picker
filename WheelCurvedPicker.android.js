@@ -63,7 +63,7 @@ var WheelCurvedPicker = React.createClass ({
 	},
 
 	_onValueChange: function(e: Event) {
-		const itemIndex = myArray.findIndex((item) => item.value === e.nativeEvent.data);
+		const itemIndex = this.state.items.findIndex((item) => item.value === e.nativeEvent.data);
 
 		if (this.props.onValueChange) {
 			this.props.onValueChange(e.nativeEvent.data, itemIndex);
