@@ -28,6 +28,8 @@ var WheelCurvedPicker = React.createClass ({
 
 		selectedValue: PropTypes.any,
 
+		selectedLineColor: ColorPropType,
+
 		selectedIndex: PropTypes.number,
 	},
 
